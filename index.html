@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hogar Seguro | Monitoreo remoto y alertas en tiempo real</title>
+  <meta name="description" content="Monitoreo remoto y alertas en tiempo real de gas, humo, temperatura y accesos abiertos para tu hogar.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a class="logo" href="#inicio" aria-label="Hogar Seguro, ir al inicio">
+      <svg class="logo__icon" width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
+        <path class="logo__house" d="M18 4 3 17h4v14h22V17h4L18 4Z"/>
+        <circle class="logo__inner" cx="18" cy="19" r="4"/>
+        <path class="logo__inner" d="M11 29c0-4 3-6 7-6s7 2 7 6z"/>
+      </svg>
+      <span class="logo__text">Hogar Seguro</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <ul class="nav__links">
+        <li><a href="#inicio">Propuesta de valor</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#casos-de-uso">Casos de uso</a></li>
+        <li><a href="#preguntas">Preguntas frecuentes</a></li>
+      </ul>
+      <a class="btn btn--primary" href="#registro">Registro gratuito</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO / PROPUESTA DE VALOR -->
+    <section class="section hero" id="inicio">
+      <div class="hero__copy">
+        <span class="badge">Monitoreo preventivo para tu hogar</span>
+        <h1 class="hero__title">Tu hogar vigilado, aunque no estés en casa</h1>
+        <p class="hero__text">Monitoreo remoto y alertas en tiempo real de gas, humo, temperatura y accesos abiertos. Sin falsas alarmas, sin complicaciones.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#registro">Probar gratis</a>
+          <a class="btn btn--secondary" href="#como-funciona">Ver cómo funciona</a>
+        </div>
+        <p class="hero__note">Plan gratuito disponible · Sin tarjeta de crédito</p>
+      </div>
+
+      <div class="phone" role="img" aria-label="Vista previa de la app: Hogar Protegido, con sensores de gas, temperatura, ventana y humo">
+        <div class="phone__screen">
+          <p class="phone__title">Mi Hogar Seguro</p>
+          <div class="phone__banner">
+            <strong>Hogar Protegido</strong>
+            <span>Todos los sensores en estado Normal</span>
+          </div>
+          <ul class="sensors">
+            <li class="sensor"><i class="dot dot--ok"></i><div class="sensor__info"><b>Gas - Cocina</b><span>Normal</span></div><em>0 ppm</em></li>
+            <li class="sensor"><i class="dot dot--ok"></i><div class="sensor__info"><b>Temperatura - Sala</b><span>Normal</span></div><em>24 °C</em></li>
+            <li class="sensor"><i class="dot dot--warn"></i><div class="sensor__info"><b>Ventana - Balcón</b><span>Advertencia</span></div><em>Abierta</em></li>
+            <li class="sensor"><i class="dot dot--ok"></i><div class="sensor__info"><b>Humo - Pasillo</b><span>Normal</span></div><em>Sin humo</em></li>
+          </ul>
+          <div class="phone__tabs"><b>Inicio</b><span>Dispositivos</span><span>Historial</span><span>Ajustes</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section class="section section--white" id="como-funciona">
+      <header class="heading">
+        <h2>Cómo funciona</h2>
+        <p>Tres pasos para saber que tu hogar está seguro</p>
+      </header>
+      <ol class="steps">
+        <li class="card card--soft">
+          <span class="step__num" aria-hidden="true">1</span>
+          <h3>Conecta tus sensores</h3>
+          <p>Vincula tus sensores de gas, humo, temperatura y accesos con su código y asígnales habitación.</p>
+        </li>
+        <li class="card card--soft">
+          <span class="step__num" aria-hidden="true">2</span>
+          <h3>Mira tu dashboard</h3>
+          <p>Consulta el estado de tu hogar en una sola pantalla, también cuando estás fuera.</p>
+        </li>
+        <li class="card card--soft">
+          <span class="step__num" aria-hidden="true">3</span>
+          <h3>Recibe alertas</h3>
+          <p>Te avisamos al instante en tu celular si algo requiere tu atención, con orientación clara.</p>
+        </li>
+      </ol>
+      <div class="compat">
+        <h3 class="compat__title">Sensores compatibles</h3>
+        <ul class="chips">
+          <li>Gas</li>
+          <li>Humo</li>
+          <li>Temperatura</li>
+          <li>Movimiento</li>
+          <li>Puertas y ventanas</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CASOS DE USO -->
+    <section class="section section--alt" id="casos-de-uso">
+      <header class="heading">
+        <h2>¿Para quién es?</h2>
+        <p>Pensado para quienes más se preocupan al salir de casa</p>
+      </header>
+      <div class="grid-2">
+        <article class="card card--case">
+          <span class="tag">Caso de uso</span>
+          <h3>Personas que viven solas</h3>
+          <h4>Preocupación</h4>
+          <p>Me preocupa olvidar la cocina encendida o una ventana abierta cuando salgo.</p>
+          <h4>Cómo lo resolvemos</h4>
+          <p>Hogar Seguro te avisa al instante y te deja armar el modo "Fuera de casa" con un solo toque.</p>
+          <a class="btn btn--primary" href="#registro">Probar gratis</a>
+        </article>
+        <article class="card card--case">
+          <span class="tag">Caso de uso</span>
+          <h3>Dueños de mascotas</h3>
+          <h4>Preocupación</h4>
+          <p>Mi mascota se queda sola y temo que suba la temperatura o haya gas.</p>
+          <h4>Cómo lo resolvemos</h4>
+          <p>Define temperaturas mínima y máxima y recibe alertas de gas, humo y calor sin falsas alarmas.</p>
+          <a class="btn btn--primary" href="#registro">Probar gratis</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PLANES -->
+    <section class="section section--white" id="planes">
+      <header class="heading">
+        <h2>Gratis para empezar, avanzado cuando lo necesites</h2>
+        <p>Qué incluye cada plan, sin letra chica</p>
+      </header>
+      <div class="grid-2">
+        <article class="card card--plan">
+          <h3>Plan gratuito</h3>
+          <p class="plan__price">S/ 0</p>
+          <p class="plan__desc">Para empezar a vigilar tu hogar</p>
+          <ul class="plan__list">
+            <li>Dashboard con estado del hogar</li>
+            <li>Alertas básicas de gas, humo y temperatura</li>
+            <li>Vinculación de sensores compatibles</li>
+          </ul>
+          <a class="btn btn--primary" href="#registro">Crear cuenta gratis</a>
+        </article>
+        <article class="card card--plan card--featured">
+          <h3>Suscripción mensual</h3>
+          <p class="plan__price">Mensual</p>
+          <p class="plan__desc">Funciones avanzadas para más tranquilidad</p>
+          <ul class="plan__list">
+            <li>Todo lo del plan gratuito</li>
+            <li>Historial ampliado de eventos</li>
+            <li>Monitoreo avanzado y reportes mensuales</li>
+          </ul>
+          <a class="btn btn--secondary" href="#registro">Conocer suscripción</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="section section--alt section--center" id="preguntas">
+      <header class="heading">
+        <h2>Preguntas frecuentes</h2>
+        <p>Resuelve tus dudas antes de registrarte</p>
+      </header>
+      <div class="faq">
+        <label class="visually-hidden" for="faq-search">Buscar una pregunta</label>
+        <input class="faq__search" id="faq-search" type="search" placeholder="Buscar una pregunta (ej. precio)" autocomplete="off">
+
+        <details class="faq__item" name="faq" open>
+          <summary>¿Qué sensores son compatibles?</summary>
+          <p>Funcionamos con sensores de gas, humo, temperatura, movimiento y apertura de puertas y ventanas.</p>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary>¿El plan gratuito tiene costo?</summary>
+          <p>No. El plan gratuito incluye el dashboard, las alertas básicas y la vinculación de sensores. Las funciones avanzadas, como el historial ampliado, requieren la suscripción mensual.</p>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary>¿Reemplaza a los bomberos o a la policía?</summary>
+          <p>No. Las alertas son preventivas e informativas y no sustituyen a los servicios de emergencia, seguridad ni atención veterinaria.</p>
+        </details>
+        <details class="faq__item" name="faq">
+          <summary>¿Cómo se tratan mis datos?</summary>
+          <p>Puedes leer cómo tratamos los datos de tu cuenta y de tus dispositivos en nuestra <a href="politica-de-privacidad.html">Política de privacidad</a>.</p>
+        </details>
+        <p class="faq__empty" id="faq-empty" hidden>No encontramos preguntas con ese término. Prueba con otra palabra.</p>
+      </div>
+    </section>
+
+    <!-- CTA FINAL / REGISTRO -->
+    <section class="section cta" id="registro">
+      <h2>Empieza a vigilar tu hogar hoy</h2>
+      <p>Crea tu cuenta gratis y vincula tu primer sensor en minutos.</p>
+      <a class="btn btn--light" href="registro.html">Crear cuenta gratis</a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__row">
+      <a class="logo" href="#inicio" aria-label="Hogar Seguro, ir al inicio">
+        <svg class="logo__icon" width="36" height="36" viewBox="0 0 36 36" aria-hidden="true">
+          <path class="logo__house" d="M18 4 3 17h4v14h22V17h4L18 4Z"/>
+          <circle class="logo__inner" cx="18" cy="19" r="4"/>
+          <path class="logo__inner" d="M11 29c0-4 3-6 7-6s7 2 7 6z"/>
+        </svg>
+        <span class="logo__text">Hogar Seguro</span>
+      </a>
+      <ul class="footer__links">
+        <li><a href="politica-de-privacidad.html">Política de privacidad</a></li>
+        <li><a href="terminos-y-condiciones.html">Términos y condiciones</a></li>
+        <li><a href="mailto:contacto@hogarseguro.example">Contacto</a></li>
+      </ul>
+    </div>
+    <p class="footer__legal">Hogar Seguro es una herramienta preventiva e informativa. No reemplaza a bomberos, policía ni servicios veterinarios.</p>
+    <p class="footer__legal">© 2026 Hogar Seguro</p>
+  </footer>
+
+  <script>
+    // Buscador de preguntas frecuentes (US-39)
+    (function () {
+      var input = document.getElementById('faq-search');
+      var items = document.querySelectorAll('.faq__item');
+      var empty = document.getElementById('faq-empty');
+      input.addEventListener('input', function () {
+        var q = input.value.trim().toLowerCase();
+        var visible = 0;
+        items.forEach(function (it) {
+          var match = !q || it.textContent.toLowerCase().indexOf(q) !== -1;
+          it.hidden = !match;
+          if (match) visible++;
+        });
+        empty.hidden = visible !== 0;
+      });
+    })();
+  </script>
+</body>
+</html>
